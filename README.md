@@ -1,4 +1,5 @@
-<h1 align="center">Hangman Web</h1>
+<h1 align="center"><b>H</b>angman <b>W</b>eb</h1>
+
 
 <p align="center">
 A modern browser-based <strong>Hangman game</strong> built with
