@@ -1,18 +1,18 @@
-# Hangman Web
+<h1 align="center">🎮 Hangman Web</h1>
 
 <p align="center">
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
-![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge\&logo=json\&logoColor=white)
-![Architecture](https://img.shields.io/badge/Architecture-MVC-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Educational-blue?style=for-the-badge)
-
+A modern browser-based <strong>Hangman game</strong> built with
+<strong>HTML, CSS, and JavaScript</strong> following the
+<strong>MVC (Model-View-Controller)</strong> architecture.
 </p>
 
-A modern browser-based **Hangman Game** built using **HTML, CSS, and JavaScript**. The project follows the **Model-View-Controller (MVC)** architecture, ensuring a clean separation between game logic, user interface, and user interactions. The game features multiple categories, smooth animations, responsive design, and an engaging gameplay experience.
-
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white">
+  <img src="https://img.shields.io/badge/Architecture-MVC-success?style=for-the-badge">
+</p>
 ---
 
 ## Features
