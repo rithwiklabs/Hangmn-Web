@@ -1,4 +1,4 @@
-<h1 align="center">🎮 Hangman Web</h1>
+<h1 align="center">Hangman Web</h1>
 
 <p align="center">
 A modern browser-based <strong>Hangman game</strong> built with
@@ -143,7 +143,7 @@ cd Hangman-Web
 ## Future Enhancements
 
 * Hint System
-* ⏱Timer Mode
+* Timer Mode
 * Dark Mode
 * Sound Effects
 * High Score Tracking
