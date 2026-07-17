@@ -1,4 +1,4 @@
-<h1 align="center"><b>H</b>angman <b>W</b>eb</h1>
+<h1 align="center"><i>Hangman Web</i></h1>
 
 
 <p align="center">
@@ -14,6 +14,7 @@ A modern browser-based <strong>Hangman game</strong> built with
   <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white">
   <img src="https://img.shields.io/badge/Architecture-MVC-success?style=for-the-badge">
 </p>
+
 ---
 
 ## Features
