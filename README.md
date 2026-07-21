@@ -21,7 +21,7 @@ A modern browser-based <strong>Hangman game</strong> built with
 
 * Random word generation
 * Five different word categories
-* 40–50 words in each category
+* 30 words in each category
 * Animated Hangman (No image assets)
 * Physical keyboard support
 * Interactive virtual keyboard
