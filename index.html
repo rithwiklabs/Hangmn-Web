@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Web</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Title -->
+    <div class="title">
+        <h1>Hangman Web</h1>
+    </div>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left">
+            <div class="base"></div>
+            <div class="pole"></div>
+            <div class="beam"></div>
+            <div class="rope"></div>
+
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="left-arm"></div>
+            <div class="right-arm"></div>
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+        </div>
+        <!-- Right Panel -->
+        <div class="right">
+            <div class="category">
+                <h3>Category</h3>
+                <p>Category_Name</p>
+            </div>
+            <!-- Word To Be Guessed -->
+            <div class="word">
+                <h2>WORD_TO_GUESS</h2>
+            </div>
+            <!-- Number of Attempts Left -->
+            <div class="stats">
+                <p>Wrong Guesses : <span>No_OF_WRONG</span>/WORD_LENGTH</p>
+                <p>Attempts Left: <span>WORD_LENGTH - NO_OF_WORNG</span></p>
+            </div>
+            <div class="status">
+                <p>Click <b>New Game</b> to Start</p>
+            </div>
+        </div>
+    </div>
+    <!-- New Game Button -->
+    <div class="game">
+        <button>New Game</button>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p><b>&copy; All Rights Reserved</b></p>
+    </footer>
+</body>
+
+</html>
