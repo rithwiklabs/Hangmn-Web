@@ -11,8 +11,8 @@ class Model {
     }
     getRandomCategory() {
         const category = Object.keys(this.data);
-        category.sort(() => Math.random() - 0.5);
-        this.category = category[0];
+        const randomidx = Math.floor(Math.random() * category.length);
+        this.category = category[randomidx];
         // console.log(this.category)
     }
     getRandomWord() {
@@ -29,9 +29,7 @@ class Model {
     }
 }
 const model = new Model();
-(async () => {
-    // await model.loadwords();
-    // model.getRandomCategory();
-    // model.getRandomWord();
-    model.newGame();
-})();
+// (async () => {
+//     await model.loadwords();
+//     model.newGame();
+// })();
