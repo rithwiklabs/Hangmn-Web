@@ -33,11 +33,11 @@
         <div class="right">
             <div class="category">
                 <h3>Category</h3>
-                <p>Category_Name</p>
+                <p id="category"></p>
             </div>
             <!-- Word To Be Guessed -->
             <div class="word">
-                <h2>WORD_TO_GUESS</h2>
+                <h2 id="word"></h2>
             </div>
             <!-- Number of Attempts Left -->
             <div class="stats">
@@ -45,19 +45,21 @@
                 <p>Attempts Left: <span>WORD_LENGTH - NO_OF_WORNG</span></p>
             </div>
             <div class="status">
-                <p>Click <b>New Game</b> to Start</p>
+                <p id="status">Click <b>New Game</b> to Start</p>
             </div>
         </div>
     </div>
     <!-- New Game Button -->
     <div class="game">
-        <button>New Game</button>
+        <button id="new-game">New Game</button>
     </div>
     <!-- Footer -->
     <footer>
         <p><b>&copy; All Rights Reserved</b></p>
     </footer>
     <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
 </body>
 
 </html>

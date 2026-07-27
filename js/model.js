@@ -30,7 +30,7 @@ class Model {
 }
 const model = new Model();
 (async () => {
-    await model.loadwords();
+    // await model.loadwords();
     // model.getRandomCategory();
     // model.getRandomWord();
     model.newGame();
