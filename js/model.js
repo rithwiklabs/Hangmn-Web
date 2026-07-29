@@ -3,33 +3,49 @@ class Model {
         this.data = {};
         this.category = "";
         this.word = "";
+        this.guessedLetters = [];
+        this.wrongGuesses = 0;
+        this.gameOver = false;
     }
     async loadwords() {
         const response = await fetch("data/words.json");
         this.data = await response.json();
-        // console.log(this.data);
     }
     getRandomCategory() {
         const category = Object.keys(this.data);
         const randomidx = Math.floor(Math.random() * category.length);
         this.category = category[randomidx];
-        // console.log(this.category)
     }
     getRandomWord() {
         const words = this.data[this.category];
         const randidx = Math.floor(Math.random() * words.length);
         this.word = words[randidx];
-        // console.log("Word : ", this.word)
+    }
+    guessLetter(ch) {
+        if (this.guessedLetters.includes(ch))
+            return;
+        this.guessedLetters.push(ch);
+        if (!this.word.includes(ch))
+            this.wrongGuesses++;
+    }
+    hasWon() {
+        for (let i = 0; i < this.word.length; i++) {
+            if (!this.guessedLetters.includes(this.word[i]))
+                return false;
+        }
+        return true;
+    }
+    hasLost() {
+        return this.wrongGuesses >= 5;
     }
     newGame() {
+        this.guessedLetters = [];
+        this.wrongGuesses = 0;
         this.getRandomCategory();
         this.getRandomWord();
+
         // console.log("Category : " + this.category);
         // console.log("Word : " + this.word);
     }
 }
 const model = new Model();
-// (async () => {
-//     await model.loadwords();
-//     model.newGame();
-// })();
