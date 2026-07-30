@@ -27,7 +27,7 @@ class View {
     }
     displayStats(wrongGuesses) {
         this.wrongGuesses.textContent = wrongGuesses;
-        this.attemptsLeft.textContent = 5 - wrongGuesses;
+        this.attemptsLeft.textContent = 6 - wrongGuesses;
     }
 }
 const view = new View();

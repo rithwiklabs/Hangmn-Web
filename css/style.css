@@ -37,11 +37,21 @@ p {
 
 /* LEFT PANEL (HANGMAN) */
 
+
 .left {
-    position: relative;
-    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 
+.hangman {
+    position: relative;
+    right: 170px;
+    width: auto;
+    height: 400px;
+    /* / padding: ; */
+}
 
 /*  Wooden Frame  */
 
@@ -61,7 +71,8 @@ p {
     left: 40px;
 
     width: 15px;
-    height: 37vh;
+    height: 260px;
+    /* height: 310px; */
     background: black;
 }
 
