@@ -23,10 +23,11 @@ class Model {
     }
     guessLetter(ch) {
         if (this.guessedLetters.includes(ch))
-            return;
+            return false;
         this.guessedLetters.push(ch);
         if (!this.word.includes(ch))
             this.wrongGuesses++;
+        return true;
     }
     hasWon() {
         for (let i = 0; i < this.word.length; i++) {
@@ -36,7 +37,7 @@ class Model {
         return true;
     }
     hasLost() {
-        return this.wrongGuesses >= 5;
+        return this.wrongGuesses >= 6;
     }
     newGame() {
         this.guessedLetters = [];

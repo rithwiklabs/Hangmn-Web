@@ -183,6 +183,11 @@ p {
 
 /* RIGHT PANEL (GAME INFORMATION) */
 
+.category h3 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 .right {
     display: flex;
     flex-direction: column;
@@ -192,9 +197,10 @@ p {
 .category,
 .word,
 .stats,
-.status {
+.status,
+.guessed {
     text-align: center;
-    padding: 15px;
+    padding: auto;
     border-bottom: 1px solid #ddd;
 }
 
@@ -207,6 +213,48 @@ p {
 .status p {
     margin: 8px 0;
 }
+
+.head,
+.body,
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+    display: none;
+}
+
+.guessed {
+    /* margin-top: 10px; */
+    border: 5px solid #ddd;
+    border-radius: 10px;
+}
+
+.guessed h3 {
+    margin: 0 0 10px 0;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#guessed-letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    min-height: 35px;
+}
+
+.guessed-letter {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 
 /* NEW GAME BUTTON */
 
