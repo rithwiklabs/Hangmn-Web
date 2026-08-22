@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman Web</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
@@ -41,11 +42,16 @@
             <div class="word">
                 <h2 id="word"></h2>
             </div>
+            <div class="guess-input">
+                <label>Enter a letter:</label>
+                <input type="text" id="guess" maxlength="1" autocomplete="off">
+            </div>
             <!-- Number of Attempts Left -->
             <div class="stats">
                 <p>Wrong Guesses : <span id="wrong-guesses">0</span>/6</p>
                 <p>Attempts Left: <span id="attempts-left">6</span></p>
             </div>
+
             <div class="guessed">
                 <h3>Guessed Letters</h3>
                 <p id="guessed-letters"></p>

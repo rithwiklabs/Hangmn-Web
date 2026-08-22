@@ -14,54 +14,62 @@ class Controller {
         this.view.displayStatus("Guess a letter!");
 
     }
+    processGuess(letter) {
+        if (this.model.gameOver)
+            return;
 
+        const isNewGuess = this.model.guessLetter(letter);
+        if (!isNewGuess) {
+            this.view.displayStatus("You already guessed \"" + letter.toLowerCase() + "\"!");
+            return
+        }
+        this.view.displayGuessedLetters(
+            this.model.guessedLetters
+        );
+
+        this.view.displayHangman(
+            this.model.wrongGuesses
+        );
+
+        this.view.displayWord(
+            this.model.word,
+            this.model.guessedLetters
+        );
+
+        this.view.displayStats(
+            this.model.wrongGuesses
+        );
+
+        if (this.model.hasWon()) {
+            this.model.gameOver = true;
+            this.view.displayStatus("Congratulations! You Won!");
+        }
+        if (this.model.hasLost()) {
+            this.model.gameOver = true;
+            this.view.displayStatus(
+                "Game Over! The Word was " + this.model.word
+            );
+        }
+
+    }
     addEventListeners() {
+
         this.view.newGameBtn.addEventListener("click", () => {
             this.startGame();
         });
 
-        document.addEventListener("keydown", (event) => {
+        this.view.guessInput.addEventListener("input", (event) => {
 
-            if (this.model.gameOver)
-                return;
 
-            const letter = event.key.toLowerCase();
+            const letter = event.target.value.toLowerCase();
 
             if (letter >= "a" && letter <= "z") {
-
-                const isNewGuess = this.model.guessLetter(letter);
-                if (!isNewGuess) {
-                    this.view.displayStatus("You already guessed \"" + letter.toLowerCase() + "\"!");
-                    return
-                }
-                this.view.displayGuessedLetters(
-                    this.model.guessedLetters
-                );
-
-                this.view.displayHangman(
-                    this.model.wrongGuesses
-                );
-
-                this.view.displayWord(
-                    this.model.word,
-                    this.model.guessedLetters
-                );
-
-                this.view.displayStats(
-                    this.model.wrongGuesses
-                );
-
-                if (this.model.hasWon()) {
-                    this.model.gameOver = true;
-                    this.view.displayStatus("Congratulations! You Won!");
-                }
-
-                if (this.model.hasLost()) {
-                    this.model.gameOver = true;
-                    this.view.displayStatus(
-                        "Game Over! The Word was " + this.model.word
-                    );
-                }
+                this.processGuess(letter);
+                // event.target.value = "";
+                setTimeout(() => {
+                    event.target.value = "";
+                    
+                }, 200);
             }
         });
     }

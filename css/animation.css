@@ -1,0 +1,22 @@
+.head,
+.body,
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+    display: none;
+}
+
+.hangman-part {
+    animation: appear 0.3s ease-in-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

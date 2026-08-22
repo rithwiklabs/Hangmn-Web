@@ -15,6 +15,7 @@ class View {
             document.querySelector(".right-leg"),
         ];
         this.guessedLetters = document.getElementById("guessed-letters");
+        this.guessInput = document.getElementById("guess");
     }
     displayCategory(category) {
         this.category.textContent = category;
@@ -40,14 +41,18 @@ class View {
     }
     displayHangman(wrongGuesses) {
         for (let i = 0; i < this.hangmanParts.length; i++) {
-            if (i < wrongGuesses)
+            if (i < wrongGuesses) {
                 this.hangmanParts[i].style.display = "block";
-            else
+                this.hangmanParts[i].classList.add("hangman-part");
+            }
+            else {
                 this.hangmanParts[i].style.display = "none";
+                this.hangmanParts[i].classList.remove("hangman-part");
+            }
         }
     }
     displayGuessedLetters(letters) {
-        // this.guessedLetters.textContent = letters.join(" ");
+
         this.guessedLetters.innerHTML = "";
         for (const letter of letters) {
             const box = document.createElement("div");
@@ -55,6 +60,14 @@ class View {
             box.textContent = letter.toLowerCase();
             this.guessedLetters.appendChild(box);
         }
+    }
+
+    disableInput() {
+        this.guessInput.disabled = true;
+    }
+    enableInput() {
+        this.guessInput.disabled = false;
+        this.guessInput.focus();
     }
 }
 const view = new View();

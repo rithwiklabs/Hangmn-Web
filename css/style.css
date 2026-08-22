@@ -255,6 +255,32 @@ p {
     font-size: 18px;
 }
 
+.guess-input {
+    text-align: center;
+    padding: 15px;
+}
+
+
+.guess-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.guess-input input {
+    width: px;
+    height: 45px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+}
+
+.guess-input input:focus {
+    border-color: #61b5f0;
+}
 
 /* NEW GAME BUTTON */
 

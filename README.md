@@ -1,6 +1,5 @@
 <h1 align="center"><i>Hangman Web</i></h1>
 
-
 <p align="center">
 A modern browser-based <strong>Hangman game</strong> built with
 <strong>HTML, CSS, and JavaScript</strong> following the
@@ -19,15 +18,18 @@ A modern browser-based <strong>Hangman game</strong> built with
 
 ## Features
 
-* Random word generation
-* Five different word categories
-* 30 words in each category
-* Animated Hangman (No image assets)
-* Physical keyboard support
-* Interactive virtual keyboard
-* New Game / Restart option
-* Responsive user interface
-* Fast and lightweight
+- Random word and category generation
+- Five different word categories
+- 15 words in each category
+- Animated Hangman without image assets
+- Physical keyboard support
+- Letter input box
+- Guessed letters display
+- Duplicate guess handling
+- Win and loss detection
+- New Game / Restart option
+- Responsive user interface
+- Fast and lightweight
 
 ---
 
@@ -39,30 +41,30 @@ This project follows the **Model-View-Controller (MVC)** design pattern.
 
 Responsible for:
 
-* Loading the word database
-* Selecting random words and categories
-* Managing game state
-* Validating guesses
-* Checking win/loss conditions
+- Loading the word database
+- Selecting random words and categories
+- Managing game state
+- Validating guesses
+- Checking win/loss conditions
 
 ### View
 
 Responsible for:
 
-* Rendering the game interface
-* Displaying the hidden word
-* Showing the selected category
-* Updating the Hangman animation
-* Displaying game messages and status
+- Rendering the game interface
+- Displaying the hidden word
+- Showing the selected category
+- Updating the Hangman animation
+- Displaying game messages and status
 
 ### Controller
 
 Responsible for:
 
-* Handling user interactions
-* Processing keyboard and button events
-* Coordinating communication between the Model and View
-* Starting and resetting the game
+- Handling user interactions
+- Processing keyboard and button events
+- Coordinating communication between the Model and View
+- Starting and resetting the game
 
 ---
 
@@ -105,22 +107,22 @@ Hangman-Web/
 
 ## Word Categories
 
-The game includes approximately **200–250 words** distributed across five categories:
+The game includes approximately **75 words** distributed across five categories:
 
-* Programming
-* Countries
-* Animals
-* Movies
-* Sports
+- Programming
+- Famous Companies
+- Sports
+- Countries
+- Linux
 
 ---
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* JSON
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- JSON
 
 ---
 
@@ -144,16 +146,30 @@ cd Hangman-Web
 
 ## Future Enhancements
 
-* Hint System
-* Timer Mode
-* Dark Mode
-* Sound Effects
-* High Score Tracking
-* Game Statistics
-* Difficulty Levels
+- Hint System
+- Timer Mode
+- Dark Mode
+- Sound Effects
+- High Score Tracking
+- Game Statistics
+- Difficulty Levels
 
 ---
 
 ## License
 
 This project is created for **educational and learning purposes**.
+
+---
+
+<div align="center">
+
+# Author
+
+### **M Rithwik Kumar**
+
+**B.Tech Computer Science (Cyber Security)**
+
+If you found this project helpful, consider giving it a ⭐ on GitHub!
+
+</div>
